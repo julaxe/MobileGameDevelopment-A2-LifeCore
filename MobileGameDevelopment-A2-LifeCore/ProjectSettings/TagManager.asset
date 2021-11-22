@@ -41,3 +41,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Windows
+    uniqueID: 2975177811
+    locked: 0
+  - name: Walls
+    uniqueID: 1564106799
+    locked: 0
+  - name: Platforms
+    uniqueID: 263927509
+    locked: 0
+  - name: Laders
+    uniqueID: 4103223967
+    locked: 0
+  - name: Player
+    uniqueID: 447919027
+    locked: 0
+  - name: Banners
+    uniqueID: 2860602639
+    locked: 0
