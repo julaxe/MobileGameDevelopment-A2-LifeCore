@@ -10,6 +10,15 @@ public class PlayerIdleState : PlayerStateBase
         Animator.Play("PlayerIdle");
     }
 
+    public override void OnFixedUpdateState()
+    {
+        base.OnFixedUpdateState();
+        if (Rb.velocity.y != 0.0f)
+        {
+            PlayerStateMachine.PushStateByKey("InAir");
+        }
+    }
+
     protected override void PressMoveRight()
     {
         base.PressMoveRight();

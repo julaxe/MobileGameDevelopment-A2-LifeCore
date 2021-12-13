@@ -46,5 +46,19 @@ public class BulletPool : MonoBehaviour
             AddANewBullet();
         }
     }
-    
+
+    public int GetAmountOfActives()
+    {
+        int amountOfActives = 0;
+        foreach (var bullet in listOfBullets)
+        {
+            if (bullet.activeSelf == true)
+            {
+                amountOfActives++;
+            }
+        }
+
+        return amountOfActives;
+    }
+
 }

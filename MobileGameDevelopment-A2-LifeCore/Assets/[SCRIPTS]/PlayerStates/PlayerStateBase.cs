@@ -21,7 +21,7 @@ public class PlayerStateBase : StateBase
     protected bool Fire;
 
     //moving variables
-    protected float jumpForce = 200.0f;
+    protected float jumpForce = 100.0f;
     protected float walkingForce = 10.0f;
     protected float velocityToRun = 1.5f;
     
@@ -118,6 +118,7 @@ public class PlayerStateBase : StateBase
         {
             bullet.SetDirection(Vector2.left);
         }
+        SoundManager.Instance.Play("PlayerShoot");
 
     }
 
